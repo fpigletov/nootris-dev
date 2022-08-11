@@ -68,6 +68,12 @@ window.addEventListener('DOMContentLoaded', () => {
         yPercent: 100
     });
 
+    gsap.from('.home__bg-image', {
+        opacity: 0,
+        delay: 1,
+        duration: 1
+    });
+
     gsap.from('.home__descr', {
         opacity: 0,
         delay: 3.5,
@@ -112,8 +118,4 @@ window.addEventListener('DOMContentLoaded', () => {
         delay: 6.5,
         duration: 1
     });
-
-
-
-
 });
