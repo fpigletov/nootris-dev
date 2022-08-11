@@ -16,9 +16,16 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }); 
 
+    function burgerActions() {
+        let burgerAL = burgerBtn.getAttribute('aria-label');
+        burgerAL === 'Открыть меню' ? burgerBtn.setAttribute('aria-label', 'Закрыть меню') : burgerBtn.setAttribute('aria-label', 'Открыть меню');
+    }
+
     burgerBtn.addEventListener('click', () => {
         burgerBtn.classList.toggle('active');
-        headerMenu.classList.toggle('active');        
+        headerMenu.classList.toggle('active');   
+        
+        burgerActions();
     });
 
     function removeActive() {
@@ -33,7 +40,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('keydown', (e) => {
         if (e.code === 'Escape') {           
-            removeActive();            
+            removeActive();  
+            burgerActions();
         }
     });
 
@@ -42,10 +50,12 @@ window.addEventListener('DOMContentLoaded', () => {
         if (!target.closest('.header__menu') && !target.closest('.header__burger') &&
             burgerBtn.classList.contains('active')) {
             removeActive();
+            burgerActions();
         }
 
         if (target.classList.contains('header__link')) {
             removeActive();
+            burgerActions();
         }
     });
 
