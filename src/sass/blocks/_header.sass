@@ -1,0 +1,186 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 100
+    background-color: $bg-color
+    transition: box-shadow 0.3s ease, background-color 0.3s ease
+    &.active
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.8)
+        background-color: rgba(0, 0, 0, 1)
+
+    &__body
+        min-height: 80px
+        display: flex
+        align-items: center
+        padding: 10px 0
+        @media (max-width: $md1)
+            justify-content: space-between
+
+    &__logo
+        display: block
+        width: 120px
+        margin-right: 7.22%
+        @media (max-width: $md1)
+            margin-right: 30px
+
+    &__menu
+        margin-right: 5.2777%
+        @media (max-width: $md1)
+            margin-right: 0
+        @media (max-width: $md2)
+            display: block
+            position: fixed
+            top: 0
+            right: 0
+            transform: translateX(100%)
+            opacity: 0
+            visibility: hidden
+            width: 50%
+            height: 100vh
+            overflow: auto
+            z-index: 50
+            background-color: rgba(0, 0, 0, 0.85)
+            transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease
+            padding: 120px 20px 40px 20px
+            &.active
+                opacity: 1
+                visibility: visible
+                transform: translateX(0)
+                transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease
+        @media (max-width: $md3)
+            width: 70%
+        @media (max-width: $md4)
+            width: 90%
+
+    &__list
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        @media (max-width: $md2)
+            flex-direction: column
+            flex-wrap: nowrap
+            align-items: flex-end
+
+    &__item
+        &:not(:last-child)
+            margin-right: 40px
+        @media (max-width: $md1)
+            &:not(:last-child)
+                margin-right: 25px
+            &:last-child
+                display: none
+        @media (max-width: $md2)
+            &:last-child
+                display: block
+            &:not(:last-child)
+                margin: 0 0 30px 0
+
+    &__link
+        position: relative
+        color: $white-color
+        &::before,
+        &::after
+            content: ''
+            position: absolute
+            bottom: -6px
+            width: 0
+            height: 2px
+            opacity: 0
+            background-color: $white-color
+            transition: all 0.3s ease 0s
+        &::before
+            left: 50%
+        &::after
+            right: 50%
+        @media (any-hover: hover)
+            &:hover
+                &::before,
+                &::after
+                    width: 45%
+                    opacity: 1
+        @media (max-width: $md2)
+            font-size: 28px
+        @media (max-width: $md4)
+            font-size: 25px
+
+    &__actions
+        display: flex
+        align-items: center
+
+    &__phone,
+    &__basket
+        color: $white-color
+        font-size: 30px
+        transition: color 0.3s ease 0s
+        z-index: 60
+        @media (any-hover: hover)
+            &:hover
+                color: $orange-color
+
+    &__phone
+        display: none
+        font-size: 22px
+        transform: rotate(20deg)
+        @media (max-width: $md1)
+            display: block
+            margin-right: 20px
+
+    &__basket
+        position: relative
+        flex: 0 0 32px
+        height: 32px
+        span
+            position: absolute
+            right: -8px
+            bottom: -5px
+            width: 16px
+            height: 16px
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: $orange-color
+            font-size: 12px
+            color: black
+            border-radius: 100%
+        @media (max-width: $md2)
+            margin-right: 20px
+
+    &__burger
+        display: none
+        @media (max-width: $md2)
+            display: block
+            position: relative
+            width: 30px
+            height: 18px
+            cursor: pointer
+            z-index: 60
+            transition: background-color 0.3s ease 0s
+            span
+                transition: all 0.3s ease 0s
+                top: calc(50% - 1px)
+                left: 0
+                position: absolute
+                width: 100%
+                height: 2px
+                background-color: $white-color
+                &:first-child
+                    top: 0
+                &:last-child
+                    top: auto
+                    bottom: 0
+            &.active
+                span
+                    transform: scale(0)
+                    &:first-child
+                        transform: rotate(-45deg)
+                        top: calc(50% - 1px)
+
+                    &:last-child
+                        transform: rotate(45deg)
+                        bottom: calc(50% - 1px)
+
+            @media (any-hover: hover)
+                &:hover span
+                    background-color: $orange-color

@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20170731 at Thu Aug 11 10:22:46 2022
+ By Aleksey,,,
+</metadata>
+<defs>
+<font id="icomoon" horiz-adv-x="1024" >
+  <font-face 
+    font-family="icomoon"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1024"
+    panose-1="0 0 0 0 0 0 0 0 0 0"
+    ascent="960"
+    descent="-64"
+    bbox="0 -58.5 1024 955.024"
+    underline-thickness="0"
+    underline-position="0"
+    unicode-range="U+0001-FFFD"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" unicode="&#xfffd;" 
+ />
+    <glyph glyph-name="glyph1" horiz-adv-x="0" 
+d="M0 0v0v0v0z" />
+    <glyph glyph-name="glyph1" horiz-adv-x="0" 
+d="M0 0v0v0v0z" />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="341" 
+ />
+    <glyph glyph-name="uni0001" horiz-adv-x="0" 
+d="M0 0v0v0v0z" />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="512" 
+d="M0 0v0v0v0z" />
+    <glyph glyph-name="uniE900" unicode="&#xe900;" 
+d="M1024 576h-174l-183 304q-6 12 -19 15t-24 -4q-12 -6 -15 -19t4 -24l162 -272h-526l162 272q7 11 4 24t-15 19q-11 7 -24 4t-19 -15l-183 -304h-174v-64h69l82 -434q6 -34 32.5 -56t61.5 -22h534q35 0 61.5 22t32.5 56l82 434h69v32v32v0zM810 90q-2 -11 -11 -18.5
+t-20 -7.5h-534q-11 0 -20 7.5t-11 18.5l-79 422h754z" />
+    <glyph glyph-name="uniE901" unicode="&#xe901;" 
+d="M732 252l-33 -50q-5 -7 -12 -13t-15 -8q-28 -8 -102 7.5t-188 129.5t-129.5 188t-7.5 102q2 8 8 15t13 12l50 33q27 18 33.5 50.5t-11.5 60.5l-94 140q-16 24 -43.5 32.5t-54.5 -3.5l-42 -18q-24 -10 -43 -28t-31 -41q-9 -20 -16 -40.5t-8 -42.5q-2 -34 4 -92
+q7 -58 33.5 -132.5t81.5 -162.5q54 -88 148 -182t182 -148q88 -55 162.5 -81.5t132.5 -33.5q58 -6 92 -4q22 1 42.5 8t40.5 16q23 12 41 31t28 43l18 42q12 27 3.5 54.5t-32.5 43.5l-140 94q-28 18 -60.5 11.5t-50.5 -33.5v0z" />
+  </font>
+</defs></svg>
